@@ -1,0 +1,12 @@
+version: "3"
+services:
+  csharp:
+    container_name: csharp
+    build:
+      context: .
+      dockerfile:  ./Dockerfile
+    volumes:
+      - ./key:/usr/local/key
+      - ./src:/usr/local/src
+    ports:
+      - "40022:22"

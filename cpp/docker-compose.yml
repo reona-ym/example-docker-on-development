@@ -1,0 +1,12 @@
+version: "3"
+services:
+  cpp:
+    container_name: cpp
+    build:
+      context: .
+      dockerfile:  ./Dockerfile
+    volumes:
+      - ./key:/usr/local/key
+      - ./src:/usr/local/src
+    ports:
+      - "40022:22"

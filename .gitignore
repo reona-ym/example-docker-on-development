@@ -1,0 +1,9 @@
+id_rsa
+id_rsa.pub
+.vscode
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
